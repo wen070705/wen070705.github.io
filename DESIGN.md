@@ -18,7 +18,7 @@ Airy paper hero, oversized three-stop trail map, research clearing, and compact 
 
 ## Motion
 
-Seasonal atmosphere, pointer firefly, depth shifts, and restrained node feedback. Disable nonessential motion with `prefers-reduced-motion`.
+Each season has its own full hero scene and motion language: spring petals and sprouting, summer water rings and dragonfly movement, autumn wind-driven maple leaves, and winter snow streaks. Pointer coordinates drive subtle scene parallax and particle wind. Disable nonessential motion with `prefers-reduced-motion`.
 
 ## Components
 

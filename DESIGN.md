@@ -2,7 +2,7 @@
 
 ## Theme
 
-Morning in a research grove, illustrated as a non-pixel fantasy adventure.
+An explorer's sketchbook rendered with loose brown-pencil contours, translucent watercolor fills, visible construction strokes, and generous paper space.
 
 ## Palette
 
@@ -14,7 +14,7 @@ All implementation colors use OKLCH: sky blue primary, leaf green structure, amb
 
 ## Layout
 
-Full-bleed hero, asymmetric trail map, research clearing, and compact contact camp. Mobile becomes a linear trail.
+Airy paper hero, oversized three-stop trail map, research clearing, and compact contact camp. Mobile becomes a linear illustrated expedition.
 
 ## Motion
 

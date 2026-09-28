@@ -17,7 +17,7 @@
   <div class="firefly" aria-hidden="true"></div>
 
   <header class="hero" id="home">
-    <img class="hero-art" src="./assets/garden-knight.png" alt="戴墨镜、披绿色围巾的花园小骑士守望研究山谷" />
+    <img class="hero-art" src="./assets/garden-knight-doodle.png" alt="戴墨镜、披绿色围巾的涂鸦花园小骑士沿着三站项目路线冒险" />
     <div class="hero-shade" aria-hidden="true"></div>
     <nav class="trail-nav" aria-label="主要导航">
       <a class="brand" href="#home"><span aria-hidden="true">✦</span> wenb</a>
@@ -56,27 +56,30 @@
       <div class="section-heading">
         <p>地图在脚下展开</p>
         <h2 id="journey-title">冒险日志 · Quest Log</h2>
-        <span>点击地图节点，查看正在成长的项目。</span>
+        <span>从智账出发，经过绘梦花园，抵达连理小站。点击三座站点查看项目。</span>
       </div>
 
       <div class="trail-map">
-        <svg class="trail-line" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M80 430 C230 300 260 455 410 325 S650 140 920 92" />
+        <svg class="trail-line" viewBox="0 0 1200 650" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M105 500 C260 330 350 535 525 350 S805 175 1090 115" />
         </svg>
 
-        <button class="quest-node active" data-quest="grove" style="--x:14%; --y:78%" type="button">
+        <button class="quest-node" data-quest="zhizhang" style="--x:12%; --y:77%" type="button">
+          <span class="node-order">01</span>
+          <span class="node-mark">⌂</span>
+          <span><strong>Zhi-Zhang</strong><small>智账 · Origin</small></span>
+        </button>
+        <button class="quest-node active" data-quest="grove" style="--x:47%; --y:53%" type="button">
+          <span class="node-order">02</span>
           <span class="node-mark">🌱</span>
-          <span><strong>Visionary Grove</strong><small>绘梦花园 · Active Quest</small></span>
+          <span><strong>Visionary Grove</strong><small>绘梦花园 · Growth</small></span>
         </button>
-        <button class="quest-node" data-quest="graph" style="--x:44%; --y:57%" type="button">
-          <span class="node-mark">◌</span>
-          <span><strong>Graph Frontier</strong><small>图基础模型 · Exploring</small></span>
-        </button>
-        <button class="quest-node" data-quest="medical" style="--x:76%; --y:27%" type="button">
+        <button class="quest-node" data-quest="lianli" style="--x:82%; --y:25%" type="button">
+          <span class="node-order">03</span>
           <span class="node-mark">✦</span>
-          <span><strong>Healing Lens</strong><small>医学影像 · Learning</small></span>
+          <span><strong>Lianli Xiaozhan</strong><small>连理小站 · Fieldwork</small></span>
         </button>
-        <div class="map-note">每一条路径都从一个问题开始。<br /><span>Every trail begins with a question.</span></div>
+        <div class="map-note">从第一次动手，到让想法落地。<br /><span>From the first build to real-world growth.</span></div>
       </div>
     </section>
 

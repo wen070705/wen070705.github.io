@@ -1,4 +1,12 @@
 const quests = {
+  zhizhang: {
+    icon: "⌂",
+    state: "第一站 · Origin",
+    title: "Zhi-Zhang · 智账",
+    cn: "我的第一段完整开发实践。从基础的程序员三件套出发，学习怎样把一个想法真正做成项目。",
+    en: "My first complete building experience—a starting point for learning how an idea becomes a working project.",
+    href: "https://github.com/wen070705/Zhi-zhang-smart-accounting-"
+  },
   grove: {
     icon: "🌱",
     state: "当前任务 · Active Quest",
@@ -7,19 +15,13 @@ const quests = {
     en: "A place where every imaginative idea can take root and grow—my first featured path, still evolving.",
     href: "https://github.com/wen070705/Visionary-Grove"
   },
-  graph: {
-    icon: "◌",
-    state: "探索区域 · Research Frontier",
-    title: "Graph Foundation Models · 图基础模型",
-    cn: "我正在学习模型如何理解节点、关系与结构，并期待把分散的连接变成可以迁移的知识。",
-    en: "I am exploring how models understand nodes, relations, and structure—and turn connections into transferable knowledge."
-  },
-  medical: {
+  lianli: {
     icon: "✦",
-    state: "学习区域 · Learning Path",
-    title: "Medical Imaging · 医学影像",
-    cn: "医学影像让算法面对真实而重要的问题。这条路径关注表征、识别与可信的临床价值。",
-    en: "Medical imaging brings algorithms closer to meaningful real-world problems: representation, recognition, and trustworthy clinical value."
+    state: "第三站 · Fieldwork",
+    title: "Lianli Xiaozhan · 连理小站",
+    cn: "把技术带进真实场景：识别病虫害，理解植物的状态，让模型服务于看得见的需求。",
+    en: "Taking technology into the field by identifying pests and plant diseases and connecting models with visible needs.",
+    href: "https://github.com/wen070705/lianlixiaozhan"
   }
 };
 
@@ -67,3 +69,8 @@ window.addEventListener("pointermove", (event) => {
 document.documentElement.addEventListener("mouseleave", () => { firefly.style.opacity = "0"; });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
+
+window.addEventListener("load", () => {
+  const target = location.hash && document.querySelector(location.hash);
+  if (target) target.scrollIntoView({ behavior: "auto", block: "start" });
+});

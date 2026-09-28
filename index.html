@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="wenb 的互动研究花园：机器学习、图基础模型与医学影像。" />
+  <meta name="theme-color" content="#2f6f4d" />
+  <title>wenb · Research Grove</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body data-season="spring">
+  <a class="skip-link" href="#journey">跳到主要内容 / Skip to content</a>
+  <div class="firefly" aria-hidden="true"></div>
+
+  <header class="hero" id="home">
+    <img class="hero-art" src="./assets/garden-knight.png" alt="戴墨镜、披绿色围巾的花园小骑士守望研究山谷" />
+    <div class="hero-shade" aria-hidden="true"></div>
+    <nav class="trail-nav" aria-label="主要导航">
+      <a class="brand" href="#home"><span aria-hidden="true">✦</span> wenb</a>
+      <div class="nav-links">
+        <a href="#journey">旅程 Journey</a>
+        <a href="#research">研究 Research</a>
+        <a href="#camp">联系 Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-copy">
+      <p class="chapter">一位学生开发者的研究冒险</p>
+      <h1>沿着好奇心，<br />走进智能的花园。</h1>
+      <p class="hero-en">Following curiosity into a living garden of intelligence.</p>
+      <p class="intro">你好，我是 <strong>wenb</strong>。我在机器学习、图基础模型与医学影像之间寻找新的连接，也把每一个项目当作一颗等待发芽的种子。</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#journey">开始冒险 · Begin</a>
+        <a class="button quiet" href="https://github.com/wen070705">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="season-panel" aria-label="改变花园季节">
+      <span>花园季节 · Season</span>
+      <div class="season-buttons" role="group" aria-label="季节选择">
+        <button type="button" data-set-season="spring" aria-pressed="true" title="春 Spring">春</button>
+        <button type="button" data-set-season="summer" aria-pressed="false" title="夏 Summer">夏</button>
+        <button type="button" data-set-season="autumn" aria-pressed="false" title="秋 Autumn">秋</button>
+        <button type="button" data-set-season="winter" aria-pressed="false" title="冬 Winter">冬</button>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#journey">沿小径前行 <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main>
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="section-heading">
+        <p>地图在脚下展开</p>
+        <h2 id="journey-title">冒险日志 · Quest Log</h2>
+        <span>点击地图节点，查看正在成长的项目。</span>
+      </div>
+
+      <div class="trail-map">
+        <svg class="trail-line" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M80 430 C230 300 260 455 410 325 S650 140 920 92" />
+        </svg>
+
+        <button class="quest-node active" data-quest="grove" style="--x:14%; --y:78%" type="button">
+          <span class="node-mark">🌱</span>
+          <span><strong>Visionary Grove</strong><small>绘梦花园 · Active Quest</small></span>
+        </button>
+        <button class="quest-node" data-quest="graph" style="--x:44%; --y:57%" type="button">
+          <span class="node-mark">◌</span>
+          <span><strong>Graph Frontier</strong><small>图基础模型 · Exploring</small></span>
+        </button>
+        <button class="quest-node" data-quest="medical" style="--x:76%; --y:27%" type="button">
+          <span class="node-mark">✦</span>
+          <span><strong>Healing Lens</strong><small>医学影像 · Learning</small></span>
+        </button>
+        <div class="map-note">每一条路径都从一个问题开始。<br /><span>Every trail begins with a question.</span></div>
+      </div>
+    </section>
+
+    <section class="research" id="research" aria-labelledby="research-title">
+      <div class="research-copy">
+        <p class="chapter">研究种子 · Research seeds</p>
+        <h2 id="research-title">把复杂问题，种成可以理解的形状。</h2>
+        <p>我关心模型如何从结构中学习，也关心这些能力怎样帮助我们理解真实世界中的医学图像。目前仍在路上——保持提问，持续实验，认真记录。</p>
+        <p class="research-en">I study how models learn from structure, and how those abilities can help us understand medical images in the real world. Still learning, always experimenting.</p>
+      </div>
+      <ol class="seed-list">
+        <li><span>01</span><div><strong>机器学习</strong><small>Machine Learning</small></div><em>让数据形成判断</em></li>
+        <li><span>02</span><div><strong>图基础模型</strong><small>Graph Foundation Models</small></div><em>让连接成为语言</em></li>
+        <li><span>03</span><div><strong>医学影像</strong><small>Medical Imaging</small></div><em>让像素携带意义</em></li>
+      </ol>
+    </section>
+
+    <section class="camp" id="camp" aria-labelledby="camp-title">
+      <img src="./assets/avatar.jpg" alt="wenb 的毛绒伙伴：戴着墨镜、系绿色围巾" />
+      <div>
+        <p class="chapter">抵达今日的营地</p>
+        <h2 id="camp-title">一起聊聊下一次探索。</h2>
+        <p>如果你也对机器学习、图模型或医学影像感兴趣，欢迎来信。</p>
+        <p class="camp-en">If our paths cross, let’s build something thoughtful together.</p>
+      </div>
+      <div class="camp-actions">
+        <a class="button primary" href="mailto:wenb@mail.dlut.edu.cn">wenb@mail.dlut.edu.cn</a>
+        <a class="button quiet" href="https://github.com/wen070705">@wen070705 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> wenb</span>
+    <span>在好奇心里生长 · Grown with curiosity</span>
+  </footer>
+
+  <dialog class="quest-dialog" id="quest-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="关闭">×</button>
+    <span class="dialog-icon" aria-hidden="true"></span>
+    <p class="dialog-state"></p>
+    <h2 id="dialog-title"></h2>
+    <p class="dialog-cn"></p>
+    <p class="dialog-en"></p>
+    <a class="button primary dialog-link" href="#">查看项目 · View quest ↗</a>
+  </dialog>
+</body>
+</html>
